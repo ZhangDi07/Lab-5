@@ -116,7 +116,7 @@ char[] data= datastr.toCharArray();//将datastr转化为char数组
 			 s = new String(data,0,len);			//根据读取文件的内容创建String 对象
 				}
 ```
-8.判断出现次数的方法：
+8.判断某个字或词出现次数的方法：
 ```
 while (str.indexOf(word) != -1) {
 	            // 如果存在相同字符串则次数加1
