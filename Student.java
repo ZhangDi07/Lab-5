@@ -1,11 +1,7 @@
 package zd.upfile;
 
 public class Student {
-	//	学生的基本信息类
-	//	姓名：狗子；
-	//	学号：17001；
-	//	班级：02；
-	//	性别：男；
+
 	private String name;
 	private Integer stu_num;
 	private String lv;
@@ -14,7 +10,6 @@ public class Student {
 	public Student() {
 		
 	}
-	//有参构造方法是给这些属性赋值的
 	public Student(String name,Integer stu_num,String lv,String sex) {
 		this.name=name;
 		this.stu_num=stu_num;
