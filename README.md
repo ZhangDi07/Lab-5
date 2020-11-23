@@ -52,7 +52,83 @@ public Student() {
 		this.name = name;
 	}
   ```
-  3.
+  3.插入句号的方法：
+  ```
+  for(int i=0;i<s.length();i++) {
+					if(i%7==0&&i!=0) {
+						if(i%2==0) {//偶数
+								
+						        	//在第i个字符前插
+									sum=sum+1;
+									int a=i+sum;
+									stb.insert(a,"。");
+						}
+
+					}
+				}
+```
+4.插入逗号的方法：
+```
+for(int i=0;i<s.length();i++) {
+			if(i%7==0&&i!=0) {
+				if(i%2!=0) {
+					if(sumtw==0){
+						sumtw=sumtw+1;
+						int a=i+sumtw;
+						stbtw.insert(a,",");
+			}else{
+				sumtw=sumtw+2;
+				int a=i+sumtw;
+				stbtw.insert(a,",");
+			}
+								
+				}
+
+			}
+		}
+```
+5.插入换行的方法：
+```
+for(int i=0;i<datas.length();i++) {
+			if(i%16==0&&i!=0) {//在句号后面插入换行符
+				sumth=sumth+1;
+				int a=i+sumth;
+				stbth.insert(a, "\n");
+			}
+
+		}
+```
+6.写入数据的方法：
+```
+char[] data= datastr.toCharArray();//将datastr转化为char数组
+	   	      	char[] da= input.toCharArray();//将datastr转化为char数组
+	   	       		wt.write(data);//写入数据
+	   	       		wt.write(da);
+	   	       		wt.flush();//立即写入
+	   	       		wt.close();//关闭流
+```
+7.读取数据的方法：
+```
+		Reader rd=new FileReader(file);
+		char[] data = new char[1024];
+		int len;
+		while((len=rd.read(data))!=-1) {
+			 s = new String(data,0,len);			//根据读取文件的内容创建String 对象
+				}
+```
+8.判断出现次数的方法：
+```
+while (str.indexOf(word) != -1) {
+	            // 如果存在相同字符串则次数加1
+	            count++;
+	           // 调用String类的substring(int beginIndex)方法，获得第一个相同字符出现后的字符串
+	            str = str.substring(str.indexOf(word)
+	            + word.length());
+	
+		}
+	       System.out.println(word+"出现的次数为："+count);
+```
+
 ##实验结果
 结果1：  
 ![alt console](https://m.qpic.cn/psc?/V50ini880vFPiW2LYxFK2RoQRD3UEErn/bqQfVz5yrrGYSXMvKr.cqViWeg6HBQ*TGdsH1ziwaDQ4z5Ce*wTUT5c3E5*sEUoEBgHQUFsqpXjLTISkJdCXA52nQn6r7PqZxLLGn6H.ppc!/b&bo=qgJSAQAAAAADB9k!&rf=viewer_4)  
