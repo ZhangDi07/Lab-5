@@ -1,7 +1,7 @@
 # Lab-5
 第五次试验 11.23  
 计G201 2020322063 张迪  
-##实验内容  
+## 实验内容  
 1.在桌面创建一个文本B，写入《长恨歌》。在创建一个空白的文本A  
 2.要求：  
 每7个汉字加入一个标点符号，奇数时加“，”，偶数时加“。”  
@@ -9,12 +9,12 @@
 考虑操作中可能出现的异常，在程序中设计异常处理程序  
 3.将处理后的信息存储到文件A中  
 
-##实验目的  
+## 实验目的  
 1.掌握字符串String及其方法的使用  
 2.掌握文件的读取/写入方法  
 3.掌握异常处理结构
 
-##实验过程  
+## 实验过程  
 1.定义学生的基本信息类，学生的基本信息类中包括  
 姓名：name;  
 学号：stu_num;  
@@ -31,7 +31,7 @@
 findword(char word,String str)对应字符的操作；  
 findword(String word,String str)对应字符串的操作；  
 
-##核心方法  
+## 核心方法  
 1.构造方法（无参、有参）：  
 ```
 public Student() {
@@ -130,11 +130,11 @@ while (str.indexOf(word) != -1) {
 	       System.out.println(word+"出现的次数为："+count);
 ```
 
-##实验结果
+## 实验结果
 结果1：  
 ![alt console](https://m.qpic.cn/psc?/V50ini880vFPiW2LYxFK2RoQRD3UEErn/bqQfVz5yrrGYSXMvKr.cqViWeg6HBQ*TGdsH1ziwaDQ4z5Ce*wTUT5c3E5*sEUoEBgHQUFsqpXjLTISkJdCXA52nQn6r7PqZxLLGn6H.ppc!/b&bo=qgJSAQAAAAADB9k!&rf=viewer_4)  
 结果2：
 ![alt console](https://m.qpic.cn/psc?/V50ini880vFPiW2LYxFK2RoQRD3UEErn/bqQfVz5yrrGYSXMvKr.cqe1ChMD7qqdE8uqjio9kJdw1ubKXfReOHosKAuiTCr1meRCnQ9d6*.smy8orGNlvZd*FPry0Zr8o4LkNEpyKoUA!/b&bo=owasAwAAAAABByo!&rf=viewer_4)
 
-##实验感想  
+## 实验感想  
 通过本次实验，主要学会了文件的读写方法，以及对内容进行处理（加逗号、句号和换行）。在写的过程中遇到了很多问题，比如B中的内容无法复制到文本A中，换行无法显示，文本A中的内容乱码等等。在解决过程中印象最深的就是B中的内容无法复制到文本A中，首先要搞清楚自己写的代码中到底哪个是写入，要写对应的文件地址，这个十分重要！文本A中的内容乱码，需要更改字符编码UTF-8。还掌握了对字符串String和方法的使用。感觉这次实验最难的部分就是输入输出流，虽然写出来了，但还是有点蒙。。。需要更深入的学习理解。总之，通过本次实验，又使自己有了提高~
